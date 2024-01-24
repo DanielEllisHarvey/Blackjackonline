@@ -1,0 +1,11 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: dotted;
+} #cards {
+    outline: 2px;
+    outline-style: double;
+} p#card-number {
+    font-family: fantasy;
+    font-size: 7px;
+    text-decoration: underline;
+}  
