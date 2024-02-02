@@ -1,11 +1,40 @@
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: dotted;
-} #cards {
-    outline: 2px;
-    outline-style: double;
+}
+#card-number {
+    position: relative;
+    top: 30px;
+    left: 20px;
+}.card {
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.15, 0.5, 0.4, 1);
+} .cards {
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.15, 0.5, 0.4, 1);
+    display: inline-block;
+    position: relative;
+} .cards:nth-child(1n+2) {
+    margin-left: -50px;
+} .cards:first-child {
+    padding-left: 10;
+} .cards:hover {
+    .card {
+        transform: rotateY(180deg);
+        rotate: 5deg;
+        translate: 0 -30px;
+        z-index: 0;
+    }
+    #card-number {
+        rotate: 5deg;
+        z-index: 2;
+        translate: 0 -30px;
+    }
 } p#card-number {
     font-family: fantasy;
-    font-size: 7px;
+    font-size: 20px;
     text-decoration: underline;
+    max-width: 117px;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.15, 0.5, 0.4, 1);
 }  
